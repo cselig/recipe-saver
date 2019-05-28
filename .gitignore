@@ -1,0 +1,13 @@
+dist/
+
+# npm
+node_modules/
+npm-debug.log
+package-lock.json
+stats.json
+
+.DS_Store
+
+.python-version
+
+.vscode
