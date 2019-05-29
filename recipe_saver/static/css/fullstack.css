@@ -32,8 +32,13 @@
     text-align: center;
 }
 
-.navbar p {
-	font-size: 20px;
-    text-decoration: none;
-    margin: auto;
+.navbar a {
+	font-size: 35px;
+	margin: auto;
+	text-decoration: none;
+	color: #212F3D;
+}
+
+.navbar a:hover {
+	color: #566573;
 }
