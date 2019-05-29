@@ -24,3 +24,16 @@
 .header-contents button:focus {
 	outline: None;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #BDC3C7;
+    width: 100%; /* Full width */
+    text-align: center;
+}
+
+.navbar p {
+	font-size: 20px;
+    text-decoration: none;
+    margin: auto;
+}
