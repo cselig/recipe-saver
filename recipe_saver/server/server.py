@@ -1,6 +1,6 @@
 import random
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__, static_folder="../static/dist", template_folder="../static/html")
 
@@ -14,11 +14,11 @@ def demo():
 
 @app.route("/hello")
 def hello():
-    return get_hello()
+    return random.choice(['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej'])
 
-def get_hello():
-    greeting_list = ['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej']
-    return random.choice(greeting_list)
+@app.route("/get_categories")
+def get_categories():
+    return jsonify(['mains', 'sides', 'desserts'])
 
 if __name__ == "__main__":
     app.run()
