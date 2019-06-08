@@ -5,7 +5,7 @@ import CategoryPane from "./CategoryPane"
 export default class App extends React.Component {
     render () {
         return (
-            <div className="component-app">
+            <div className="container">
                 <Header />
                 <CategoryPane />
             </div>

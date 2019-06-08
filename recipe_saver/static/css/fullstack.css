@@ -1,0 +1,25 @@
+.header {
+	text-align: center;
+	background-color: grey;
+	font-size: 2rem;
+}
+
+.category-pane {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.category {
+	flex: 0 0 auto;
+	width: 10em;
+	text-align: center;
+	border: solid black;
+	margin: 5px 5px;
+}
+
+.category p {
+	vertical-align: middle;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}

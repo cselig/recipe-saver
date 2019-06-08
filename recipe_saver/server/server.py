@@ -18,7 +18,7 @@ def hello():
 
 @app.route("/get_categories")
 def get_categories():
-    return jsonify(['mains', 'sides', 'desserts'])
+    return jsonify(['mains', 'sides', 'desserts', 'misc'])
 
 if __name__ == "__main__":
     app.run()
