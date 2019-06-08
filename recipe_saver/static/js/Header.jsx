@@ -4,7 +4,7 @@ export default class CategoryPane extends React.Component {
     render() {
         return (
             <div className="header">
-                <p>Header</p>
+                <a href="/">Recipe Saver</a>
             </div>
         );
     }
