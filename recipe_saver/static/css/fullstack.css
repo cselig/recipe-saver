@@ -1,16 +1,27 @@
+:root {
+	--color-1: #17252a;
+	--color-2: #2b717b;
+	--color-3: #3aafa9;
+	--color-4: #def2f1;
+	--color-5: #feffff;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
 .header {
 	text-align: center;
-	background-color: grey;
+	background-color: var(--color-3);
 	font-size: 2rem;
 }
 
 .header a {
-	color: black;
+	color: var(--color-1);
 }
 
 .header a:hover {
-	color: darkslategrey;
-	text-decoration: none;
+	color: var(--color-2);
 }
 
 .category-pane {
@@ -23,12 +34,17 @@
 	flex: 0 0 auto;
 	width: 10em;
 	text-align: center;
-	border: solid black;
+	border: solid var(--color-1);
 	margin: 5px 5px;
+}
+
+.category:hover {
+	background-color: var(--color-4);
 }
 
 .category p {
 	vertical-align: middle;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	color: var(--color-1);
 }

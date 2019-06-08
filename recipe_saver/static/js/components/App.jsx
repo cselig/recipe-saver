@@ -3,7 +3,7 @@ import Header from "./Header"
 import CategoryPane from "./CategoryPane"
 
 export default class App extends React.Component {
-    render () {
+    render() {
         return (
             <div className="container">
                 <Header />

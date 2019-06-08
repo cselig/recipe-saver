@@ -14,13 +14,12 @@ export default class CategoryPane extends React.Component {
     }
 
     getCategories() {
-        return $.getJSON(window.location.href + 'get_categories', (data) => {
-            console.log(data);
+        return $.getJSON('/get_categories', (data) => {
             this.setState({category_arr: data});
         });
     }
 
-    render () {
+    render() {
         return (
             <div className="category-pane">
                 {this.state.category_arr.map((value, index) => {
