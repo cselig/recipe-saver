@@ -1,7 +1,7 @@
 import React from "react";
 
 export default class Category extends React.Component {
-    render () {
+    render() {
         return (
             <a href={"/recipes?category=" + this.props.name}>
                 <div className="category">
