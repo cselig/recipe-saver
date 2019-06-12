@@ -8,5 +8,6 @@ setup(
     url='https://github.com/cselig/recipe-saver',
     requires=[
         'flask',
+        'flask_sqlalchemy',
     ],
 )

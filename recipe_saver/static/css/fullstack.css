@@ -35,7 +35,7 @@ a:hover{
 	width: 10em;
 	text-align: center;
 	border: solid var(--color-1);
-	margin: 5px 5px;
+	margin: 10px 5px;
 }
 
 .category:hover, .recipe-card:hover {
