@@ -9,5 +9,6 @@ setup(
     requires=[
         'flask',
         'flask_sqlalchemy',
+        'psycopg2-binary',
     ],
 )
