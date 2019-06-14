@@ -2,11 +2,14 @@ const webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-    entry:  __dirname + '/js/index.jsx',
+    entry:  {
+		index: __dirname + '/js/index.jsx',
+		recipe: __dirname + '/js/recipe.jsx'
+	},
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js',
-    },
+        filename: '[name].js',
+	},
     resolve: {
         extensions: [".js", ".jsx", ".css"]
     },

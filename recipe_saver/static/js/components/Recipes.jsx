@@ -7,10 +7,7 @@ export default class Recipes extends React.Component {
         const params = new URLSearchParams(this.props.location.search); 
         const category = params.get('category');
         return (
-            <div className="container">
-                <Header />
-                <RecipeList category={category}/>
-            </div>
+            <RecipeList category={category}/>
         );
     }
 }

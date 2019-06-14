@@ -10,6 +10,11 @@ a:hover{
 	text-decoration: none;
 }
 
+.container-fluid {
+	margin: 0 0;
+	padding: 0 0;
+}
+
 .header {
 	text-align: center;
 	background-color: var(--color-3);
@@ -22,6 +27,10 @@ a:hover{
 
 .header a:hover {
 	color: var(--color-2);
+}
+
+#content {
+	margin: 0 10%;
 }
 
 .category-pane, .recipe-list {

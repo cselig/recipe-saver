@@ -28,7 +28,7 @@ export default class RecipeList extends React.Component {
         return (
             <div className="recipe-list">
                 {this.state.recipe_arr.map((value, index) => {
-                    return <RecipeCard name={value} key={index} />
+                    return <RecipeCard name={value.name} id={value.id} key={index} />
                 })}               
             </div>
         );

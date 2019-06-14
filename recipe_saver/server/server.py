@@ -19,11 +19,15 @@ class Recipe(db.Model):
         return '<Recipe %r>' % self.name
 
 
-@app.route('/recipe')
 @app.route('/recipes')
-@app.route("/")
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
+
+@app.route('/recipe/<id>')
+def recipe(id):
+    data = get_recipe(id)
+    return render_template('recipe.html', **data)
 
 @app.route("/get_categories")
 def get_categories():
@@ -32,7 +36,13 @@ def get_categories():
 @app.route("/get_recipes")
 def get_recipes():
     category = request.args.get('category')
-    return jsonify([x.name for x in Recipe.query.filter_by(category=category).all()])
+    result = [x.__dict__ for x in Recipe.query.filter_by(category=category).all()]
+    [x.pop('_sa_instance_state') for x in result]
+    return jsonify(result)
+
+def get_recipe(id):
+    result = Recipe.query.filter_by(id=id).one()
+    return result.__dict__
 
 if __name__ == "__main__":
     app.run()
